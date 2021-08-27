@@ -11,7 +11,7 @@ public class HibernateConfiguration {
 		Configuration cfg = new Configuration();
 		cfg.configure().addAnnotatedClass(User.class);
 		SessionFactory sessionFactory = cfg.buildSessionFactory();
-		
+		System.out.println(sessionFactory);
 		
 		return sessionFactory;
 
